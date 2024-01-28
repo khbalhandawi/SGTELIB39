@@ -26,6 +26,11 @@
 #include "Tests.hpp"
 #include "Surrogate_Ensemble.hpp"
 
+#ifdef __linux__ 
+  using std::isinf;
+  using std::isnan;
+#endif
+
 void SGTELIB::sand_box (void){
 
   std::cout << "End of sandbox\nEXIT\n";

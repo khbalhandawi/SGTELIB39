@@ -25,6 +25,11 @@
 
 #include "Surrogate_Ensemble.hpp"
 
+#ifdef __linux__ 
+  using std::isinf;
+  using std::isnan;
+#endif
+
 /*----------------------------*/
 /*         constructor        */
 /*----------------------------*/

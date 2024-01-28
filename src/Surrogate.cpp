@@ -27,6 +27,10 @@
 
 using namespace SGTELIB;
 
+#ifdef __linux__ 
+  using std::isinf;
+  using std::isnan;
+#endif
 /*--------------------------------------*/
 /*              constructor             */
 /*--------------------------------------*/

@@ -28,7 +28,10 @@
 #include <string>
 #include <sstream>
 
-
+#ifdef __linux__ 
+  using std::isinf;
+  using std::isnan;
+#endif
 /*-------------------------------*/
 /*     string comparison         */
 /*-------------------------------*/

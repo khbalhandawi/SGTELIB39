@@ -25,6 +25,11 @@
 
 #include "Surrogate_KS.hpp"
 
+#ifdef __linux__ 
+  using std::isinf;
+  using std::isnan;
+#endif
+
 /*----------------------------*/
 /*         constructor        */
 /*----------------------------*/

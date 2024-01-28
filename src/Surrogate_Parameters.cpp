@@ -25,6 +25,11 @@
 
 #include "Surrogate_Parameters.hpp"
 using namespace SGTELIB;
+
+#ifdef __linux__ 
+  using std::isinf;
+  using std::isnan;
+#endif
 /*---------------------------------------------------------------*/
 /*         constructor                                           */
 /* Use a model_type to define the model, then use default values */
